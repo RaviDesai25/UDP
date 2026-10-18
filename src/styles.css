@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #20251f;
+  background: #f4f1e8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.home {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  overflow: hidden;
+  padding: 2rem;
+  background:
+    radial-gradient(ellipse at 18% 22%, rgb(244 124 85 / 22%), transparent 30%),
+    radial-gradient(ellipse at 82% 78%, rgb(77 167 137 / 22%), transparent 34%),
+    #f4f1e8;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(3.25rem, 11vw, 9rem);
+  font-weight: 700;
+  line-height: 0.98;
+  text-align: center;
+  animation: arrive 700ms cubic-bezier(0.2, 0.75, 0.3, 1) both;
+}
+
+h1 span {
+  color: #ed6848;
+}
+
+@keyframes arrive {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  h1 {
+    animation: none;
+  }
+}
