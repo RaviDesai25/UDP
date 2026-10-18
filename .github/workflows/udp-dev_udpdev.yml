@@ -59,7 +59,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'UDPDev'
+          app-name: 'udpdev'
           slot-name: 'Production'
           package: .
           
